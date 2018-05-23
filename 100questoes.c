@@ -71,11 +71,11 @@ void merge (LInt *r, LInt l1, LInt l2) {
     while (l1 != NULL && l2 != NULL)
         if (l1->valor < l2->valor) {
             *r = l1;
-            r = &(l1->prox);
+            r = &((*r)->prox);
             l1 = l1->prox;
         } else {
             *r = l2;
-            r = &(l2->prox);
+            r = &((*r)->prox);
             l2 = l2->prox;
         }
 
