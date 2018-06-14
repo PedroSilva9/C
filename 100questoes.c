@@ -486,7 +486,7 @@ LInt nivelL (ABin a, int n) {
             if (l1) {
                 temp = l1;
                 while (temp && temp -> prox) temp = temp -> prox;
-                start -> prox = l2;
+                l1 -> prox = l2;
             }
             else if (l2) return l2;
         }
